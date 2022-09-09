@@ -1,11 +1,8 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-
-import Header from "../../Components/Header";
 import { CardList, AccList } from "./Components";
 const Home = () => {
   return (
     <div>
-      <Header />
       <Splide
         options={{
           autoplay: true,

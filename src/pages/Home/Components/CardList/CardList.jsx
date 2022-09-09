@@ -65,7 +65,8 @@ const cardArray = [
 
 const CardList = () => {
   return (
-    <div className="slide-card absolute -mx-[12px] top-0 left-0 w-full h-full flex justify-center items-center">
+    <div className="slide-card absolute -mx-[12px] top-0 pb-[30px] left-0 w-full h-full flex flex-col gap-y-[32px] justify-center items-center">
+      <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/images%2FACCount%20hot%20NH%E1%BA%A4T.png?alt=media&token=c74186f2-19bf-4413-ae21-844a5684864a')] w-[700px] h-[78px] object-contain bg-no-repeat "></div>
       <Splide
         options={{
           perPage: 3,
@@ -79,8 +80,8 @@ const CardList = () => {
           type: "loop",
           pagination: true,
           classes: {
-            prev: "splide__arrow--prev splide__arrow",
-            next: "splide__arrow--next splide__arrow",
+            prev: "splide__arrow--prev splide__arrow--prev--cardList splide__arrow--cardList",
+            next: "splide__arrow--next splide__arrow--next--cardList splide__arrow--cardList",
           },
         }}
       >

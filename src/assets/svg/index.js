@@ -9,3 +9,7 @@ export { default as facebook } from "./facebook";
 export { default as youtube } from "./youtube";
 export { default as network } from "./network";
 export { default as phone } from "./phone";
+export { default as Search } from "./Search";
+export { default as Coin } from "./Coin";
+export { default as Info } from "./Info";
+export { default as ArrowRight } from "./ArrowRight";

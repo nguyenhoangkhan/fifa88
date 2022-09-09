@@ -20,8 +20,8 @@ const phone = () => {
           y2="27.9649"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.203125" stop-color="#38ADDD" />
-          <stop offset="1" stop-color="#007CAE" />
+          <stop offset="0.203125" stopColor="#38ADDD" />
+          <stop offset="1" stopColor="#007CAE" />
         </linearGradient>
       </defs>
     </svg>
