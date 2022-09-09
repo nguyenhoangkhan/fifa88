@@ -1,0 +1,11 @@
+export { default as player } from "./player";
+export { default as findAcc } from "./findAcc";
+export { default as bp } from "./bp";
+export { default as reset } from "./reset";
+export { default as guide } from "./guide";
+export { default as guess } from "./guess";
+export { default as login } from "./login";
+export { default as facebook } from "./facebook";
+export { default as youtube } from "./youtube";
+export { default as network } from "./network";
+export { default as phone } from "./phone";

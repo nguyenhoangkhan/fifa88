@@ -1,13 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply font-body overflow-x-hidden;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header */
+.header-list-item {
+  @apply text-white flex items-center cursor-pointer gap-x-[12px] relative after:content-[''] ml-[-24px] px-[24px] after:absolute after:h-[100%] after:bg-white 
+  after:w-[1px] after:right-0 last:after:hidden hover:text-blue duration-300;
 }
+
+.header-list-item:hover path {
+  fill: #00b5ff;
+  transition: 0.3s;
+}
+/* Header */
+
+
+/* Splide custom */
+.splide {
+  @apply relative;
+}
+.splide__arrow {
+  @apply bg-[#082C3E] opacity-[0.23] w-[28px] h-[112px] rounded-none absolute hover:bg-gradient-blue duration-300;
+}
+.splide .splide__arrow--next {
+  @apply right-[-243px];
+}
+.splide .splide__arrow--prev {
+  @apply left-[-222px];
+}
+.splide__arrow {
+  @apply bg-[#082C3E] opacity-[0.23] w-[28px] h-[112px] rounded-none absolute hover:bg-gradient-blue duration-300;
+}
+.splide__arrow svg {
+  @apply fill-white;
+}
+.splide__pagination {
+  @apply bottom-[-58px;];
+}
+.splide__pagination li {
+  @apply mx-[2px];
+}
+.splide__pagination button {
+  @apply bg-[#082C3E] opacity-[0.2] w-[94px] h-[8px] rounded-none;
+}
+.splide__pagination .splide__pagination__page.is-active {
+  @apply bg-[#082C3E] opacity-100 scale-x-110;
+}
+.section-pagination{
+  @apply bottom-[30px];
+}
+.section-pagination button{
+  @apply bg-white opacity-60;
+}
+.section-pagination .splide__pagination__page.is-active{
+  @apply bg-white opacity-100 scale-x-110;
+}
+/* Splide custom */
+
+
