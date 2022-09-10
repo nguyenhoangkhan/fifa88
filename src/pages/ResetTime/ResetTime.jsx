@@ -1,5 +1,5 @@
 import resetTime from "../../assets/data/resetTime";
-import { Search } from "../../assets/svg";
+import { ArrowThin, Search } from "../../assets/svg";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 
@@ -11,7 +11,7 @@ const ResetTime = () => {
         <div className="mb-[26px]">
           <span className="text-primaryBlue">Trang chủ</span> / Giờ Reset
         </div>
-        <div>
+        <div className="mb-[100px]">
           <div className="grid grid-cols-[4.5fr,1fr,1fr,1fr] gap-x-[12px] mb-[20px]">
             <div className="border-borderColor h-[48px] border-[1px] relative">
               <input
@@ -99,6 +99,30 @@ const ResetTime = () => {
               ))}
             </tbody>
           </table>
+
+          <div className="flex gap-x-[12px] mt-[24px] flex justify-center">
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              <ArrowThin color="#082C3E" className="rotate-180 opacity-50" />
+            </button>
+            <button className="pagination-btn active bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              1
+            </button>
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              2
+            </button>
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              3
+            </button>
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              4
+            </button>
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              5
+            </button>
+            <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
+              <ArrowThin color="#082C3E" />
+            </button>
+          </div>
         </div>
       </div>
       <Footer />

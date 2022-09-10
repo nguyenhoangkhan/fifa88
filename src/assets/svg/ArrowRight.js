@@ -1,4 +1,4 @@
-const ArrowRight = ({ className, color }) => {
+const ArrowRight = ({ className, color = "white" }) => {
   return (
     <svg
       className={className}
