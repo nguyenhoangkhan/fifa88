@@ -17,3 +17,4 @@ export { default as Close } from "./Close";
 export { default as Eye } from "./Eye";
 export { default as Notification } from "./Notification";
 export { default as ArrowThin } from "./ArrowThin";
+export { default as ChevTable } from "./ChevTable";

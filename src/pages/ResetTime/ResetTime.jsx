@@ -1,5 +1,5 @@
 import resetTime from "../../assets/data/resetTime";
-import { ArrowThin, Search } from "../../assets/svg";
+import { ArrowThin, ChevTable, Search } from "../../assets/svg";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 
@@ -54,9 +54,12 @@ const ResetTime = () => {
                 </th>
                 <th
                   scope="col"
-                  className="py-3 px-6 border-borderColor border-[1px] bg-lightBlue"
+                  className="py-3 px-6 border-borderColor border-[1px] bg-lightBlue flex justify-between items-center"
                 >
                   Chỉ số Overall
+                  <span className="cursor-pointer">
+                    <ChevTable />
+                  </span>
                 </th>
                 <th
                   scope="col"
