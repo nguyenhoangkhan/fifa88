@@ -8,7 +8,7 @@ import {
   login as Login,
 } from "../../assets/svg";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="bg-black h-[96px] flex items-center justify-between px-[38px]">
@@ -21,35 +21,49 @@ const Header = () => {
         />
       </Link>
       <ul className="flex gap-x-[24px]">
-        <li className="header-list-item">
+        <li className="header-list-li">
           {" "}
-          <Player className="header-list-item-svg" />
-          TÌM CẦU THỦ
+          <NavLink className="header-list-item" to="/tim-cau-thu">
+            <Player className="header-list-item-svg" />
+            TÌM CẦU THỦ
+          </NavLink>
         </li>
-        <li className="header-list-item">
+        <li className="header-list-li">
           {" "}
-          <FindAcc className="header-list-item-svg" />
-          TÌM ACC
+          <NavLink className="header-list-item" to="/tim-acc">
+            <FindAcc className="header-list-item-svg" />
+            TÌM ACC
+          </NavLink>
         </li>
-        <li className="header-list-item">
-          <FindAcc className="header-list-item-svg" />
-          NẠP TIỀN
+        <li className="header-list-li">
+          <NavLink className="header-list-item" to="/nap-tien">
+            <FindAcc className="header-list-item-svg" />
+            NẠP TIỀN
+          </NavLink>
         </li>
-        <li className="header-list-item">
-          <Bp />
-          BƠM BP/FC
+        <li className="header-list-li">
+          <NavLink className="header-list-item" to="/bom-bp-fc">
+            <Bp />
+            BƠM BP/FC
+          </NavLink>
         </li>
-        <li className="header-list-item">
-          <Reset className="header-list-item-svg" />
-          GIỜ RESET
+        <li className="header-list-li">
+          <NavLink className="header-list-item" to="/gio-reset">
+            <Reset className="header-list-item-svg" />
+            GIỜ RESET
+          </NavLink>
         </li>
-        <li className="header-list-item">
-          <Guide className="header-list-item-svg" />
-          HƯỚNG DẪN
+        <li className="header-list-li">
+          <NavLink className="header-list-item" to="/huong-dan">
+            <Guide className="header-list-item-svg" />
+            HƯỚNG DẪN
+          </NavLink>
         </li>
-        <li className="header-list-item">
-          <Guess className="header-list-item-svg" />
-          DỰ ĐOÁN
+        <li className="header-list-li">
+          <NavLink className="header-list-item" to="/du-doan">
+            <Guess className="header-list-item-svg" />
+            DỰ ĐOÁN
+          </NavLink>
         </li>
       </ul>
       <button className="bg-gradient-blue text-white p-[12px] flex align-center gap-x-[8px]">
