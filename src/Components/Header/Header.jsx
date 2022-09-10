@@ -1,5 +1,6 @@
+import { memo } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import Tippy from "@tippyjs/react/headless";
 import {
   findAcc as FindAcc,
   player as Player,
@@ -13,6 +14,7 @@ import {
   ArrowRight,
 } from "../../assets/svg";
 import { useUserStore } from "../../store";
+import notifications from "../../assets/data/notifications";
 
 const Header = ({ setShowLogin }) => {
   const [user] = useUserStore();
@@ -81,8 +83,65 @@ const Header = ({ setShowLogin }) => {
               15.000.000
             </p>
           </div>
-          <div className="cursor-pointer">
-            <Notification />
+          <div>
+            <Tippy
+              offset={[-220, 40]}
+              interactive
+              render={(attrs) => (
+                <div
+                  className="bg-white shadow-md w-[496px] py-[18px] "
+                  tabIndex="-1"
+                  {...attrs}
+                >
+                  <h3 className=" px-[20px] mb-[16px] text-[20px] font-medium">
+                    Thông báo
+                  </h3>
+                  <ul>
+                    {notifications.map((data, idx) => (
+                      <li
+                        key={idx}
+                        className="flex items-center gap-x-[16px] px-[20px] py-[16px] border-b-[1px] border-borderColor cursor-pointer hover:bg-rgba duration-300"
+                      >
+                        <img
+                          src={data.image}
+                          alt=""
+                          className="rounded-full w-[38px] h-[38px] object-cover"
+                        />
+                        <div className="flex justify-between flex-1">
+                          <div>
+                            <h3 className="text-black-text text-[14px] font-semibold">
+                              {data.title}
+                            </h3>
+                            <p className="text-[14px] font-normal">
+                              {data.des}
+                              {data.type !== null && (
+                                <span className="text-primaryBlue">
+                                  &nbsp; ID: 1234567
+                                </span>
+                              )}
+                            </p>
+                          </div>
+                          <div
+                            className={`font-normal text-[14px] ${
+                              data.time === "Mới" && "text-primaryBlue"
+                            }`}
+                          >
+                            {data.time}
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-[14px] mt-[16px] text-center text-primaryBlue hover:underline cursor-pointer">
+                    Xem tất cả
+                  </p>
+                </div>
+              )}
+            >
+              <div className="cursor-pointer">
+                <Notification />
+              </div>
+            </Tippy>
           </div>
           <div className="flex items-center gap-x-[8px] cursor-pointer">
             <div
@@ -108,4 +167,4 @@ const Header = ({ setShowLogin }) => {
   );
 };
 
-export default Header;
+export default memo(Header);

@@ -121,7 +121,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .total-coin-wrapper{
-  border: 2px solid;
-  border-image-source: linear-gradient(167.01deg, #0E98DD 3.31%, #ABE4FF 37.34%, #0080C0 100.83%);
+  border: 1px solid;
+  border-image: linear-gradient(167.01deg, #0E98DD 3.31%, #ABE4FF 37.34%, #0080C0 100.83%);
+  border-image-slice: 30%;
+}
+.score{
+  border: 1px solid;
+  border-image: linear-gradient(167.01deg, #0E98DD 3.31%, #ABE4FF 37.34%, #0080C0 100.83%);
   border-image-slice: 30%;
 }

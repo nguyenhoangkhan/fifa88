@@ -18,3 +18,6 @@ export { default as Eye } from "./Eye";
 export { default as Notification } from "./Notification";
 export { default as ArrowThin } from "./ArrowThin";
 export { default as ChevTable } from "./ChevTable";
+export { default as Lion } from "./Lion";
+export { default as UEFA } from "./UEFA";
+export { default as Europa } from "./Europa";
