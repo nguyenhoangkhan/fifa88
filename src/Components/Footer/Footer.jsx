@@ -121,9 +121,15 @@ const Footer = () => {
           </span>
         </li>
         <li className="flex items-center gap-[20px] mt-[16px]">
-          <Facebook />
-          <Youtube />
-          <Network />
+          <a href="#">
+            <Facebook />
+          </a>
+          <a href="#">
+            <Youtube />
+          </a>
+          <a href="#">
+            <Network />
+          </a>
         </li>
       </ul>
     </div>
