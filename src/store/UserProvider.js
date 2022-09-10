@@ -1,0 +1,11 @@
+import { useState } from "react";
+import Context from "./Context";
+
+const Provider = ({ children }) => {
+  const [user, setUser] = useState(true);
+  return (
+    <Context.Provider value={[user, setUser]}>{children}</Context.Provider>
+  );
+};
+
+export default Provider;

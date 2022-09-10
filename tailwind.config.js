@@ -13,17 +13,23 @@ module.exports = {
       primaryBlue: "#38ADDD",
       darkBlue: { DEFAULT: "#141C31" },
       lightBlue: "#E8F6FC",
-      gradientPurpleBlue:
-        "linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
+      gradientPurpleBlue: {
+        DEFAULT:
+          "linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
+        1: "linear-gradient(180deg, #49C3FF 0%, #008FD6 100%)",
+      },
       "search-input": "rgba(204, 240, 255, 0.05)",
       transparent: "rgba(0, 0, 0, 0)",
       lightTransparent: "rgba(0, 0, 0, 0.3)",
       "box-shadow": { DEFAULT: "0px 6px 16px rgba(0, 0, 0, 0.3)" },
       borderColor: { DEFAULT: "rgba(200, 218, 227, 1)" },
+      rgba: { DEFAULT: "rgba(56, 173, 221, 0.1)" },
     },
     backgroundImage: {
-      "gradient-blue":
-        "linear-gradient(90.06deg, #00B5FF 19.6%, #007CAE 102.52%)",
+      "gradient-blue": {
+        DEFAULT: "linear-gradient(90.06deg, #00B5FF 19.6%, #007CAE 102.52%)",
+        1: "linear-gradient(180deg, #49C3FF 0%, #008FD6 100%)",
+      },
       "gradient-purple":
         "background: linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
       "gradient-blue2":

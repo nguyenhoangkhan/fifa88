@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 import {
   findAcc as FindAcc,
   player as Player,
@@ -6,10 +8,14 @@ import {
   guide as Guide,
   guess as Guess,
   login as Login,
+  Coin,
+  Notification,
+  ArrowRight,
 } from "../../assets/svg";
+import { useUserStore } from "../../store";
 
-import { Link, NavLink } from "react-router-dom";
 const Header = ({ setShowLogin }) => {
+  const [user] = useUserStore();
   return (
     <div className="bg-black h-[96px] flex items-center justify-between px-[38px]">
       <Link to="/">
@@ -66,12 +72,38 @@ const Header = ({ setShowLogin }) => {
           </NavLink>
         </li>
       </ul>
-      <button
-        className="bg-gradient-blue text-white p-[12px] flex align-center gap-x-[8px]"
-        onClick={() => setShowLogin(true)}
-      >
-        <Login /> ĐĂNG NHẬP
-      </button>
+      {user ? (
+        <div className="flex gap-x-[20px] items-center">
+          <div className="total-coin-wrapper flex items-center gap-x-[7px] bg-rgba w-[139px] h-[40px] justify-center border-white">
+            {" "}
+            <Coin />{" "}
+            <p className="totalCoin text-[20px] font-medium flex items-center leading-[40px]">
+              15.000.000
+            </p>
+          </div>
+          <div className="cursor-pointer">
+            <Notification />
+          </div>
+          <div className="flex items-center gap-x-[8px] cursor-pointer">
+            <div
+              className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/avatars%2FEllipse%2015.png?alt=media&token=de0e9e27-cab8-4910-9e3a-c713d046ed99')] bg-contain bg-no-repeat w-[40px] h-[40px]
+            "
+            ></div>
+            <div className="text-white">
+              <h3 className="text-[16px]">Williens</h3>
+              <p className="text-[14px]">ID: 123456789</p>
+            </div>
+            <ArrowRight className="rotate-90" color="white" />
+          </div>
+        </div>
+      ) : (
+        <button
+          className="bg-gradient-blue text-white p-[12px] flex align-center gap-x-[8px]"
+          onClick={() => setShowLogin(true)}
+        >
+          <Login /> ĐĂNG NHẬP
+        </button>
+      )}
     </div>
   );
 };

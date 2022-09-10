@@ -15,3 +15,4 @@ export { default as Info } from "./Info";
 export { default as ArrowRight } from "./ArrowRight";
 export { default as Close } from "./Close";
 export { default as Eye } from "./Eye";
+export { default as Notification } from "./Notification";
