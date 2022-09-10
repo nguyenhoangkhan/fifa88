@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
+      gray: "#6D6D6D",
       black: { DEFAULT: "#151515", text: "#082C3E", border: "#232C44" },
       white: { DEFAULT: "white" },
       blue: { DEFAULT: "#00B5FF" },
@@ -13,6 +14,8 @@ module.exports = {
         "linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
       "search-input": "rgba(204, 240, 255, 0.05)",
       transparent: "rgba(0, 0, 0, 0)",
+      lightTransparent: "rgba(0, 0, 0, 0.3)",
+      "box-shadow": { DEFAULT: "0px 6px 16px rgba(0, 0, 0, 0.3)" },
     },
     backgroundImage: {
       "gradient-blue":

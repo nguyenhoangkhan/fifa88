@@ -1,8 +1,11 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Footer from "../../Components/Footer";
+import Header from "../../Components/Header";
 import { CardList, AccList } from "./Components";
 const Home = () => {
   return (
     <div>
+      <Header />
       <Splide
         options={{
           autoplay: true,
@@ -45,6 +48,7 @@ const Home = () => {
         <CardList />
       </div>
       <AccList />
+      <Footer />
     </div>
   );
 };
