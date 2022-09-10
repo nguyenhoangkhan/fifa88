@@ -10,7 +10,7 @@ module.exports = {
       darkBlue: { DEFAULT: "#141C31" },
       lightBlue: "#E8F6FC",
       gradientPurpleBlue:
-        "#linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
+        "linear-gradient(135deg, #1C25E8 0%, #38ADDD 50.21%, #E715AF 100%)",
       "search-input": "rgba(204, 240, 255, 0.05)",
       transparent: "rgba(0, 0, 0, 0)",
     },

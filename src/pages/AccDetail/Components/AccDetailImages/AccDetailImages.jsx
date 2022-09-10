@@ -36,8 +36,8 @@ const AccDetailImages = () => {
         },
       },
       classes: {
-        prev: "splide__arrow--prev acc-detail-image-prev",
-        next: "splide__arrow--next acc-detail-image-next",
+        prev: "acc-detail-image-prev",
+        next: "acc-detail-image-next",
       },
     });
 

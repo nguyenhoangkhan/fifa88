@@ -51,7 +51,7 @@ const AccShowed = () => {
       <div className="flex px-[24px] mt-[24px] justify-between items-center">
         <div>
           <span className="text-[#2D92C2]">Hiển thị: </span>
-          <select className="text-white bg-transparent outline-none">
+          <select className="text-white bg-transparent outline-none hover:cursor-pointer">
             <option className="bg-black">10 acc</option>
             <option className="bg-black">20 acc</option>
             <option className="bg-black">30 acc</option>
@@ -59,22 +59,22 @@ const AccShowed = () => {
           <span className="text-white">của 130 acc</span>
         </div>
         <div className="flex gap-x-[12px]">
-          <button className="pagination-btn active bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn active bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             1
           </button>
-          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             2
           </button>
-          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             3
           </button>
-          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             4
           </button>
-          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             5
           </button>
-          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center">
+          <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
             <ArrowRight />
           </button>
         </div>
