@@ -13,3 +13,5 @@ export { default as Search } from "./Search";
 export { default as Coin } from "./Coin";
 export { default as Info } from "./Info";
 export { default as ArrowRight } from "./ArrowRight";
+export { default as Close } from "./Close";
+export { default as Eye } from "./Eye";

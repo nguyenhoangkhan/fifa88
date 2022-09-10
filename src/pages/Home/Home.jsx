@@ -1,11 +1,15 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { useState } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
+import Popup from "../../Components/Popup";
 import { CardList, AccList } from "./Components";
 const Home = () => {
+  const [isShowLogin, setShowLogin] = useState(false);
+
   return (
     <div>
-      <Header />
+      <Header setShowLogin={setShowLogin} />
       <Splide
         options={{
           autoplay: true,
@@ -49,6 +53,7 @@ const Home = () => {
       </div>
       <AccList />
       <Footer />
+      {isShowLogin && <Popup setShowLogin={setShowLogin} />}
     </div>
   );
 };

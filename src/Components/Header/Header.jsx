@@ -9,7 +9,7 @@ import {
 } from "../../assets/svg";
 
 import { Link, NavLink } from "react-router-dom";
-const Header = () => {
+const Header = ({ setShowLogin }) => {
   return (
     <div className="bg-black h-[96px] flex items-center justify-between px-[38px]">
       <Link to="/">
@@ -66,7 +66,10 @@ const Header = () => {
           </NavLink>
         </li>
       </ul>
-      <button className="bg-gradient-blue text-white p-[12px] flex align-center gap-x-[8px]">
+      <button
+        className="bg-gradient-blue text-white p-[12px] flex align-center gap-x-[8px]"
+        onClick={() => setShowLogin(true)}
+      >
         <Login /> ĐĂNG NHẬP
       </button>
     </div>
