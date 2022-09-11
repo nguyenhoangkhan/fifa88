@@ -3,7 +3,7 @@ import { reset as Reset, Search } from "../../../../../../assets/svg";
 
 const AccListContent = () => {
   return (
-    <div className="px-[225px] py-[40px] grid grid-cols-[392px,808px] relative z-[9]">
+    <div className="px-[225px] py-[40px] grid grid-cols-[392px,808px] relative z-[9] md:grid-cols-1 md:px-[20px]">
       <div>
         <div className=" text-white z-999 px-[24px] py-[12px]">
           <h1 className="uppercase text-[24px]">bộ lọc</h1>
@@ -26,7 +26,7 @@ const AccListContent = () => {
           <div className="flex flex-col justify-center gap-y-[12px] mt-[24px]">
             <button
               type="text"
-              className="uppercase hover:bg-gradient-blue2 flex items-center justify-center w-full h-[52px]  duration-500 gap-x-[8px]"
+              className="uppercase bg-gradient-blue2 flex items-center justify-center w-full h-[52px]  duration-500 gap-x-[8px]"
             >
               <Search />
               tìm kiếm

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 
-body {
+body,html {
   @apply font-body overflow-x-hidden;
   
 }

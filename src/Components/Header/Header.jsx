@@ -28,7 +28,7 @@ const Header = ({ setShowLogin }) => {
           className="w-[131px] h-[39px]"
         />
       </Link>
-      <ul className="flex gap-x-[24px]">
+      <ul className="flex gap-x-[24px] md:hidden">
         <li className="header-list-li">
           {" "}
           <NavLink className="header-list-item" to="/tim-cau-thu">

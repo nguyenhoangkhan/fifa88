@@ -98,6 +98,15 @@ const CardList = () => {
             prev: "splide__arrow--prev splide__arrow--prev--cardList splide__arrow--cardList",
             next: "splide__arrow--next splide__arrow--next--cardList splide__arrow--cardList",
           },
+          breakpoints: {
+            768: {
+              perPage: 2,
+              arrows: false,
+            },
+            640: {
+              perPage: 1,
+            },
+          },
         }}
       >
         {cardArray.map((card, index) => (

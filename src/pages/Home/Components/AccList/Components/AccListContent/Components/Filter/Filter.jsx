@@ -1,6 +1,6 @@
 const Filter = (props) => {
   return (
-    <div className="border-black-border border-b-[1px] pb-[24px]">
+    <div className="border-black-border border-b-[1px] pb-[24px] ">
       <div className="flex items-center gap-x-[12px] pt-[24px] pb-[20px]">
         <img
           className="w-[20px] h-[20px] object-cover "
@@ -9,9 +9,9 @@ const Filter = (props) => {
         />
         <span className="text-[18px] text-medium">{props.title}</span>
       </div>
-      <div className="flex justify-between">
-        <div>
-          <select className="bg-gray-50 border border-gray-300 h-[48px] p-[15px]  text-black-text outline-none cursor-pointer">
+      <div className="flex justify-between md:gap-x-[20px]">
+        <div className="md:w-[50%]">
+          <select className="bg-gray-50 border border-gray-300 h-[48px] p-[15px]  text-black-text outline-none cursor-pointer md:w-full">
             <option defaultValue>Giá min</option>
             <option value="US">United States</option>
           </select>
@@ -19,8 +19,8 @@ const Filter = (props) => {
             Min: {props.min}
           </p>
         </div>
-        <div>
-          <select className="bg-gray-50 border border-gray-300 h-[48px] p-[15px]  text-black-text outline-none cursor-pointer">
+        <div className="md:w-[50%]">
+          <select className="bg-gray-50 border border-gray-300 h-[48px] p-[15px]  text-black-text outline-none cursor-pointer md:w-full">
             <option defaultValue>Giá max</option>
             <option value="US">United States</option>
           </select>

@@ -43,7 +43,7 @@ const AccShowed = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap w-full justify-between gap-y-[25px] pl-[24px] pt-[24px]">
+      <div className="flex flex-wrap w-full justify-between gap-y-[25px] pl-[24px] pt-[24px] md:p-0">
         {Cards.map((card) => (
           <Card key={card.id} id={card.id} pic={card.pic} />
         ))}
@@ -75,7 +75,7 @@ const AccShowed = () => {
             5
           </button>
           <button className="pagination-btn bg-[#ECF3F6] w-[39px] h-[39px] flex items-center justify-center hover:scale-110 duration-200">
-            <ArrowRight />
+            <ArrowRight color="#082C3E" />
           </button>
         </div>
       </div>

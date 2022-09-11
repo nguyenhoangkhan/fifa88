@@ -4,7 +4,7 @@ const TeamColor = ({ type, ...props }) => {
   return (
     <div className="border-black-border border-b-[1px] py-[24px]">
       <h2 className="text-[18px] text-medium">Team Color {props.title}</h2>
-      <div className="flex flex-wrap justify-between gap-x-[43.5px] gap-y-[21px] mt-[20px]">
+      <div className="flex flex-wrap justify-between gap-x-[43.5px] gap-y-[21px] mt-[20px] md:justify-start">
         {type === "country"
           ? country.map((img, idx) => (
               <img
