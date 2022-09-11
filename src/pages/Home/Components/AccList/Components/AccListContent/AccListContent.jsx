@@ -3,7 +3,7 @@ import { reset as Reset, Search } from "../../../../../../assets/svg";
 
 const AccListContent = () => {
   return (
-    <div className="px-[225px] py-[40px]  grid grid-cols-[392px,808px]">
+    <div className="px-[225px] py-[40px] grid grid-cols-[392px,808px] relative z-[9]">
       <div>
         <div className=" text-white z-999 px-[24px] py-[12px]">
           <h1 className="uppercase text-[24px]">bộ lọc</h1>
