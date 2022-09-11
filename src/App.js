@@ -6,6 +6,7 @@ import GetCoins from "./pages/GetCoins";
 import ResetTime from "./pages/ResetTime";
 import GetBP from "./pages/GetBP";
 import Guess from "./pages/Guess";
+import FindPlayer from "./pages/FindPlayer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/gio-reset" element={<ResetTime />} />
         <Route path="/bom-bp-fc" element={<GetBP />} />
         <Route path="/du-doan" element={<Guess />} />
+        <Route path="/tim-cau-thu" element={<FindPlayer />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </div>

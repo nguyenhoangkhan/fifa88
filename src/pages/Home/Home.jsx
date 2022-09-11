@@ -36,6 +36,7 @@ const Home = () => {
           />
         </SplideSlide>
       </Splide>
+
       <div className="section-vip relative">
         <img
           className="w-[100%] h-[580px] object-cover opacity-40"

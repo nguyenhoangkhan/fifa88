@@ -1,3 +1,4 @@
+import { Europa, Lion, UEFA } from "../../assets/svg";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 
@@ -55,6 +56,160 @@ const Guess = () => {
                 <button className="text-white uppercase w-[137px] h-[48px] bg-gradient-blue flex items-center justify-center hover:opacity-80 duration-300 leading-[48px]">
                   gửi dự đoán
                 </button>
+              </div>
+            </div>
+            <div className="mt-[20px]">
+              <div className="flex justify-between h-[48px] border-b-[1px] border-borderColor">
+                <div className="flex items-center ">
+                  <div className="relative flex items-center gap-x-[8px] border-r-[1px] border-r-borderColor border-t-[1px] border-t-primaryBlue px-[16px] py-[14px] cursor-pointer">
+                    <Lion />{" "}
+                    <span className="text-primaryBlue font-medium text-[14px]">
+                      Premier League
+                    </span>
+                    <div className="absolute bg-white w-full bottom-0 left-0 h-2"></div>
+                  </div>
+                  <div className="flex items-center gap-x-[8px] px-[16px] py-[14px] cursor-pointer">
+                    <UEFA />{" "}
+                    <span className="text-primaryBlue font-medium text-[14px]">
+                      UEFA Champions League
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-x-[8px] px-[16px] py-[14px] cursor-pointer">
+                    <Europa />{" "}
+                    <span className="text-primaryBlue font-medium text-[14px]">
+                      UEFA Europa League
+                    </span>
+                  </div>
+                </div>
+                <select className="text-primaryBlue text-[16px] cursor-pointer outline-none">
+                  <option defaultValue>Tuần này</option>
+                  <option>Tuần trước</option>
+                </select>
+              </div>
+              <div className="grid grid-cols-3 mt-[20px] gap-x-[24px] mb-[109px]">
+                <div className="border-[1px] border-borderColor p-[16px]">
+                  <div className="flex flex-col gap-y-[20px]">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F14.png?alt=media&token=ea8f815b-1a9a-473a-9ca4-fa02545731f1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">Arsenal</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F3.png?alt=media&token=9103bfd5-2444-4cad-8d3d-3b6d1e0ee4c1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">paris saint germain</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-y-[16px] mt-[32px]">
+                      <div className="flex items-center justify-between">
+                        <p>Thời gian diễn ra</p>
+                        <b className="text-black-text">Ngày mai,21:00</b>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p>Giá trị giải thưởng</p>
+                        <b className="text-black-text">20.000 Coin</b>
+                      </div>
+                    </div>
+                    <button className="btn-gradident-guess uppercase w-[134px] h-[40px]">
+                      gửi dự đoán
+                    </button>
+                  </div>
+                </div>
+                <div className="border-[1px] border-borderColor p-[16px]">
+                  <div className="flex flex-col gap-y-[20px]">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F14.png?alt=media&token=ea8f815b-1a9a-473a-9ca4-fa02545731f1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">Arsenal</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F3.png?alt=media&token=9103bfd5-2444-4cad-8d3d-3b6d1e0ee4c1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">paris saint germain</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-y-[16px] mt-[32px]">
+                      <div className="flex items-center justify-between">
+                        <p>Thời gian diễn ra</p>
+                        <b className="text-black-text">Ngày mai,21:00</b>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p>Giá trị giải thưởng</p>
+                        <b className="text-black-text">20.000 Coin</b>
+                      </div>
+                    </div>
+                    <button className="btn-gradident-guess uppercase w-[134px] h-[40px]">
+                      gửi dự đoán
+                    </button>
+                  </div>
+                </div>
+                <div className="border-[1px] border-borderColor p-[16px]">
+                  <div className="flex flex-col gap-y-[20px]">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F14.png?alt=media&token=ea8f815b-1a9a-473a-9ca4-fa02545731f1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">Arsenal</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-x-[13px]">
+                        <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/fifa88-94963.appspot.com/o/team%20color%20fc%2F3.png?alt=media&token=9103bfd5-2444-4cad-8d3d-3b6d1e0ee4c1')] bg-contain w-[34px] h-[34px]"></div>
+                        <h2 className="capitalize">paris saint germain</h2>
+                      </div>
+                      <input
+                        type="text"
+                        value="-"
+                        disabled
+                        className="flex items-center text-center outline-none border-[1px] border-borderColor w-[40px] h-[40px]"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-y-[16px] mt-[32px]">
+                      <div className="flex items-center justify-between">
+                        <p>Thời gian diễn ra</p>
+                        <b className="text-black-text">Ngày mai,21:00</b>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <p>Giá trị giải thưởng</p>
+                        <b className="text-black-text">20.000 Coin</b>
+                      </div>
+                    </div>
+                    <button className="btn-gradident-guess uppercase w-[134px] h-[40px]">
+                      gửi dự đoán
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
